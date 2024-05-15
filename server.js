@@ -34,4 +34,7 @@ app.get('*', (req, res) => {
 // Listen for Connections
 app.listen(process.env.PORT)
 
+// part 5 new body parser
+app.use(express.urlencoded({ extended: true }))
+
 
