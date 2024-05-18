@@ -2,7 +2,7 @@ const React = require('react');
 const Def = require('../default'); // Assuming 'default' is the name of your default component
 
 function index (data) {
-    let placesFormatted = data.places.map((place) => {
+    let placesFormatted = data.places.map((place,index) => {
       return (
         <div className="col-sm-6">
           <h2>
@@ -11,7 +11,7 @@ function index (data) {
         </a>
           </h2>
           <p className='text-center'>
-            {place.cusisines}
+            {place.cuisines}
           </p>
           <img src={place.pic} alt={place.name} />
           <p className='text-center'>
