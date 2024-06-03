@@ -15,6 +15,9 @@ const app = express() // part 6 part 4 shows this isnt here any more ??
 const methodOverride = require('method-override')
 
 
+
+
+
 // Express Settings
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
@@ -38,7 +41,5 @@ app.get('*', (req, res) => {
 // Listen for Connections
 app.listen(process.env.PORT)
 
-// part 5 new body parser
-app.use(express.urlencoded({ extended: true }))
 
 
