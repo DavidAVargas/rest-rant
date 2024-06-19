@@ -78,7 +78,7 @@ function show(data) {
           Edit
         </a>
 
-        <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
+        <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}>
           <button type="submit" className="btn btn-danger">
             Delete
           </button>
@@ -90,7 +90,7 @@ function show(data) {
         </div>
 
         <h2 style={{ color: 'cornflowerblue' }}>Leave a Review</h2>
-        <form id="comment-form" action={`/places/${data.id}/comment`} method="POST">
+        <form id="comment-form" action={`/places/${data.place.id}/comment`} method="POST">
           <label htmlFor="author"> Author </label>
           <input
             type="text"
